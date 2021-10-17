@@ -17,14 +17,21 @@
 		}
 		.content .lists{
 			min-width: 20%;
+			background: brown;
+			/*display: flex;
+			justify-content: center;
+			align-items: center;*/
 
+		}
+		.content .lists ul{
+			padding-left: 0;
 		}
 		.content .lists ul li{
 			list-style: none;
-			background: blue;
-			margin: 2px;
+			background: lightgoldenrodyellow;
+			margin: 5px;
 			padding: 10px;
-			color: white;
+			font-weight: bold;
 		}
 		.content .right_content{
 			padding: 20px;
