@@ -1,0 +1,31 @@
+    *{
+
+	}
+		header{
+			background: gray;
+			padding: 10px;
+			color: white;
+		}
+		footer{
+			background: gray;
+			padding: 10px;
+			color: white;
+		}
+		.content{
+			display: flex;
+			
+		}
+		.content .lists{
+			min-width: 20%;
+
+		}
+		.content .lists ul li{
+			list-style: none;
+			background: blue;
+			margin: 2px;
+			padding: 10px;
+			color: white;
+		}
+		.content .right_content{
+			padding: 20px;
+		}
