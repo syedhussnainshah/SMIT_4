@@ -1,0 +1,27 @@
+.commonClass{
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    flex:  100%;
+}
+
+.sidebar{
+    height: 100%;
+    flex: 20%;
+}
+
+.mainSection{
+    height: 100%;
+    flex: 100%;
+}
