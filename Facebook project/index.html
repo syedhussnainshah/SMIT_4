@@ -119,154 +119,104 @@
                 </div>
             </nav>
         </header>
-        <style>
-            section{
-            /*background: blue;*/
-            height: 89vh;
-            display: flex;
-        }
-        /*right side bar Start*/
-        section > .right_side_bar {
-            /*background: yellow;*/
-            height: 89vh;
-            width: 25%;
-        }
-        /*top side bar conten*/
-        .right_side_bar .top_content ul li{
-            display: flex;align-items: center;padding: 10px;font-size: 12px;font-family: 'Roboto', sans-serif;font-weight: bold;
-        }
-        .right_side_bar .top_content ul li:hover{
-            background: lightgray;
-        }
-        .right_side_bar .top_content ul{
-            padding-right: 20px;
-        }
-        .right_side_bar .top_content ul button{
-            width: 90%;padding: 10px;border-radius: 5px;border: none;background: lightgray;display: flex;justify-content: center;align-items: center;margin-bottom: 10px;
-        }
-        .right_side_bar .top_content ul li img{
-            border-radius: 50%;width: 10%;margin-right: 10px;padding: 2px;
-        }
-        /*end top sidebar content*/
-.right_side_bar hr{
-    width: 94%;
-}
-
-        /*bottom side bar contnet*/
-.right_side_bar .bottom_content ul li{
-            display: flex;align-items: center;padding: 10px;font-size: 12px;font-family: popin;font-weight: bold;
-        }
-        .right_side_bar .bottom_content ul li:hover{
-            background: lightgray;
-        }
-        .right_side_bar .bottom_content ul li h3{
-            font-weight: bold;font-size: 20px;
-        }
-        .right_side_bar .bottom_content ul{
-            padding-right: 20px;
-        }
-        .right_side_bar .bottom_content ul li button{
-            width: 100%;padding: 10px;border-radius: 5px;border: none;background: lightgray;
-        }
-        .right_side_bar .bottom_content ul li img{
-            border-radius: 50%;width: 10%;margin-right: 10px;padding: 2px;
-        }
-        /*end bottom sidebar conten*/
-
-        /*right siide bar end */
-
-        section > main {
-            /*background: brown;*/
-            height: 89vh;
-            width: 50%;
-        }
-        section > .left_side_bar {
-            /*background: yellow;*/
-            height: 89vh;
-            width: 25%;
-        }
-        </style>
-        <section>
-            <aside class="right_side_bar">
-                <div class="top_content">
-                    <ul>
-                        <li>
-                            <img alt="" src="images/users/user-1.jpg">
-                                Save The Pomeroy Threatre
-                            </img>
-                        </li>
-                        <li>
-                            <img alt="" src="images/users/user-1.jpg">
-                                Weekend Trip
-                            </img>
-                        </li>
-                        <li>
-                            <img alt="" src="images/users/user-1.jpg">
-                                Event
-                            </img>
-                        </li>
-                        <li>
-                            <img alt="" src="images/users/user-1.jpg">
-                                Friends
-                            </img>
-                        </li>
-                        <li>
-                            <img alt="" src="images/users/user-1.jpg">
-                                Memories
-                            </img>
-                        </li>
-                        <center>
-                            <button>
-                                See More
-                                <i class="fas fa-chevron-down">
-                                </i>
-                            </button>
-                            <hr/>
-                        </center>
-                    </ul>
+        <section class="mainSection">
+        <aside class="leftSidebar">
+            <ul class="sidebarNav">
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/users/user-1.jpg" alt="User-img">
+                        </div>
+                        <p>John Deo</p>
+                    </a>
+                </li>
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/icons/tv-screen.png" alt="User-img">
+                        </div>
+                        <p>Watch</p>
+                    </a>
+                </li>
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/icons/event.png" alt="User-img">
+                        </div>
+                        <p>Event</p>
+                    </a>
+                </li>
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/icons/man.png" alt="User-img">
+                        </div>
+                        <p>Friend</p>
+                    </a>
+                </li>
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/icons/event.png" alt="User-img">
+                        </div>
+                        <p>Memories</p>
+                    </a>
+                </li>
+                <a href="#" class="btn">See More <i class="bi bi-caret-down-square"></i></a>
+            </ul>
+            <hr>
+            <ul class="sidebarNav">
+                <div class="sidebar-heading">
+                    <p>Shortcuts</p>
+                    <i class="bi bi-three-dots"></i>
                 </div>
-                <div class="bottom_content">
-                    <ul>
-                        <li>
-                            <h3>
-                                Shortcuts
-                            </h3>
-                        </li>
-                        <li>
-                            <img alt="" src="images/users/user-1.jpg">
-                                Save The Pomeroy Threatre
-                            </img>
-                        </li>
-                        <li>
-                            <img alt="" src="images/users/user-1.jpg">
-                                Watch
-                            </img>
-                        </li>
-                        <li>
-                            <img alt="" src="images/users/user-1.jpg">
-                                Jasper's Market
-                            </img>
-                        </li>
-                        <li>
-                            <img alt="" src="images/users/user-1.jpg">
-                                Friends
-                            </img>
-                        </li>
-                        <!-- <li><img src="images/users/user-1.jpg" alt=""> Memories</li> -->
-                        <li>
-                            <button>
-                                See More
-                                <i class="fas fa-chevron-down">
-                                </i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
-            <main>
-            </main>
-            <aside class="left_side_bar">
-            </aside>
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/users/user-1.jpg" alt="User-img">
+                        </div>
+                        <p>Save the Pomerory Threater</p>
+                    </a>
+                </li>
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/users/user-1.jpg" alt="User-img">
+                        </div>
+                        <p>Weekend Trips</p>
+                    </a>
+                </li>
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/users/user-1.jpg" alt="User-img">
+                        </div>
+                        <p>Jesper Market</p>
+                    </a>
+                </li>
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/users/user-1.jpg" alt="User-img">
+                        </div>
+                        <p>Red table talk group</p>
+                    </a>
+                </li>
+                <li class="sidebarItem">
+                    <a href="#" class="sidebarLink">
+                        <div class="iconImg">
+                            <img src="images/users/user-1.jpg" alt="User-img">
+                        </div>
+                        <p>Best hidden Hiking Trails</p>
+                    </a>
+                </li>
+                <a href="#" class="btn">See More <i class="bi bi-caret-down-square"></i></a>
+            </ul>
+        </aside>
+
+
+
+
         </section>
     </body>
 </html>
