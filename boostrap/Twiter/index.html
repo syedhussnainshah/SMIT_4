@@ -11,13 +11,89 @@
     <!-- Bootstrap 5.1.3 CSS Added -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+<style>
+		*{
+			margin: 0px;padding: 0px;
+		}
+		.nav_ul{
+			text-align: left;padding-left: 20px;padding: 10px;
+		}
 
+		.twiter_icon {
+			color: #00acee;margin-left: 45px;
+		}
+		.nav_ul li{
+			font-weight: bold;color: black;
+		}
+		.nav_ul li a i{
+			margin-right: 10px;
+		}
+		.nav_ul li a{
+			color: black;
+		}
+		.nav_ul .active{
+			color: #00acee;
+		}
+		.tweet_btn{
+			display: flex;justify-content: center;align-items: center;border-radius: 50px;width: 90%;padding: 10px;
+		}
+	</style>
 <body>
+	
 	<section class="container-fluid">
 		<div class="row">
-			<div class="col-md-2 bg-light">
-				<i class="bi bi-twitter"></i>
-			</div>
+			 <div class="col-md-3 col-lg-3 col-xl-2">
+			 	<h2 class="twiter_icon"><i class="bi bi-twitter"></i></h2>
+                <ul class="nav flex-column nav_ul">
+                	
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-hash"></i> Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-bell"></i> Notification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-envelope"></i> Message</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-bookmark"></i> Bookmarks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-card-list"></i> Lists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person"></i> Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-three-dots"></i> More</a>
+                    </li>
+                                    </ul>
+                                    <button class="btn btn-primary tweet_btn">Tweet</button>
+                                    <br>
+                                    <style>
+                                    .users{
+                                    	display: flex;background: blue;width: 80%;
+                                    }
+                                    	.users .user_img img{
+                                    		border-radius: 50%;width: 50%;
+                                    	}
+                                    </style>
+                                    <div class="users">
+                                    		<div class="user_img">
+                                    			<img src="images/user/user-3.jpg" alt="">
+                                    		</div>
+                                    		<div class="user_name">
+                                    			<h6>David Herbert</h6>
+                                    		</div>
+                                    		<div class="">
+                                    			<i class="bi bi-caret-down-fill"></i>
+                                    		</div>
+                                    	
+                                    </div>
+            </div>
 			<div class="col-lg-6">
 				main content
 			</div>
