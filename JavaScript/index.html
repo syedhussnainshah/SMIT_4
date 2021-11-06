@@ -6,11 +6,32 @@
 	<title>Counter</title>
 </head>
 <body>
-	<h1>0</h1>
-	<button onclick="">+</button>
-	<button onclick="">-</button>
+	<h1 id="result">0</h1>
+	<button onclick="" id="PlusButn">+</button>
+	<button onclick="" id="NegativeBtn">-</button>
 </body>
 <script>
-	
+	// Get the + button element 
+	let myCounter = 0;
+	const PlusBtn = document.getElementById('PlusButn');
+	const NegativeBtn = document.getElementById('NegativeBtn');
+
+	const result = document.getElementById('result');
+
+	// anonymus function
+	PlusButn.addEventListener("click", function () {
+		myCounter = myCounter + 1
+		result.innerText = myCounter;
+		
+	});
+	NegativeBtn.addEventListener("click", function () {
+		myCounter = myCounter - 1
+		result.innerText = myCounter;
+		
+	});
+	// Get h1 element content 
+	// result.innerText="Hussnain";
+	// increase the value of conetent in h1 
+
 </script>
 </html>
