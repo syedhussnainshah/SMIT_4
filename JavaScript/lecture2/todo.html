@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo</title>
+</head>
+<body>
+	<!-- <form action="" id="todoForm">
+		<input type="text" id="todoinput">
+		<button type="submit">Add</button>
+	</form>
+	<ul id="todos"></ul> -->
+	 <form id="todoForm">
+      <input type="text" id="todoInput" />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="todos"></ul>
+</body>
+<!-- <script>
+	let todos =[];
+	// not refresh page pr reload page
+	document.getElementById('todoForm').addEventListener("submit", function (event) {
+		event.preventDefault();
+		// todos =[];
+		const todoinput = document.getElementById('todoinput').value;
+		const todolist = document.getElementById('todos');
+		todos.push(todoinput);
+		// todolist.innerHTML="";
+		console.log();
+			const NewlistItem = document.createElement("li");
+			const Deletebutton = document.createElement("button");
+			NewlistItem.innerText = todoinput;
+			Deletebutton.innerText = " Delete li";
+			Deletebutton.onclick= function (argument) {
+				// alert(todoinput);
+				const filterarray = todos.filter(function (arrayElemnet) {
+					return todoinput !== arrayElemnet;
+				});
+				for (let index = 0; index < filterarray.length; index++ ) {
+			const element = filterarray[index];
+			console.log(element);
+			const NewlistItem = document.createElement("li");
+			const Deletebutton = document.createElement("button");
+			NewlistItem.innerText = element;
+			todolist.appendChild(NewlistItem);
+			console.log(NewlistItem);
+		}
+				console.log("todos filter", filterarray);
+			}
+
+			todolist.appendChild(NewlistItem);
+			todolist.appendChild(Deletebutton);
+			console.log(todolist);
+			// console.log(NewlistItem);
+
+		// for (let index = 0; index < todos.length; index++ ) {
+		// 	const element = todos[index];
+		// 	console.log(element);
+		// 	const NewlistItem = document.createElement("li");
+		// 	NewlistItem.innerText = element;
+		// 	todolist.appendChild(NewlistItem);
+		// 	console.log(NewlistItem);
+		// }
+	});
+</script> -->
+<script>
+    let todos = [];
+    document
+      .getElementById("todoForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        const todoInput = document.getElementById("todoInput").value;
+        const todosList = document.getElementById("todos");
+        todos.push(todoInput);
+        document.getElementById("todoInput").value = "";
+        const newListItem = document.createElement("li");
+        const deleteButton = document.createElement("button");
+        newListItem.innerText = todoInput;
+        deleteButton.innerText = "delete";
+        deleteButton.onclick = function () {
+          const filteredArr = todos.filter(function (arrElement) {
+            return todoInput !== arrElement;
+          });
+          todos = filteredArr;
+          renderMyTodoList();
+        };
+
+        todosList.appendChild(newListItem);
+        todosList.appendChild(deleteButton);
+        // for (let index = 0; index < todos.length; index++) {
+        //   const todo = todos[index];
+        //   const newListItem = document.createElement("li");
+        //   newListItem.innerText = todo;
+        //   todosList.appendChild(newListItem);
+        //   console.log(newListItem);
+        // }
+      });
+    let a = 1;
+    // a = a + 1
+    // a += 1;
+    // a++;
+    // console.log("a: ", a);
+
+    //
+    //
+    //
+    // for (let a = 0; a < 10; a = a + 2) {
+    //   console.log("a: ", a);
+    // }
+
+    function renderMyTodoList() {
+      const todosList = document.getElementById("todos");
+      todosList.innerHTML = "";
+      for (let index = 0; index < todos.length; index++) {
+        const todoInput = todos[index];
+        const newListItem = document.createElement("li");
+        const deleteButton = document.createElement("button");
+        newListItem.innerText = todoInput;
+        deleteButton.innerText = "delete";
+        deleteButton.onclick = function () {
+          const filteredArr = todos.filter(function (arrElement) {
+            return todoInput !== arrElement;
+          });
+          todos = filteredArr;
+          renderMyTodoList();
+        };
+
+        todosList.appendChild(newListItem);
+        todosList.appendChild(deleteButton);
+      }
+    }
+  </script>
+</html>

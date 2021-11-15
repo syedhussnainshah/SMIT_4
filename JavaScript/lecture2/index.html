@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Counter</title>
+</head>
+<body>
+	<input type="number" name="temp" id="temp">
+	<button onclick="getresult()">Click me</button>
+	<h1 id="result"></h1>
+	
+</body>
+<script>
+	const result = document.getElementById('result');
+
+//if keyword
+function getresult() {
+const temp = parseInt(document.getElementById('temp').value);
+	if (temp < 20) {
+	result.innerText = "jacket";
+}else if (temp > 20 && temp < 30) {
+	result.innerText = "Normal";
+}else if (temp > 30) {
+	result.innerText = "Summer";
+}else{
+	result.innerHTML = " <i>jao</i>";
+}
+}
+
+
+</script>
+<script>
+	function test() {
+	const a =3;
+		console.log(a);
+	}
+	test();
+
+</script>
+
+<script>
+	//
+	for (let a = 0; a <= 10; a+=1 ) {
+		console.log("1", a);
+	}
+</script>
+</html>
