@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		const arr = ['a','b','c','d'];
+		const obj ={
+			first: "a",
+			second: "b",
+			third: "c",
+			forth: "d",
+		};
+		console.log(obj);
+		for (const key in obj) {
+			console.log(key);
+			console.log(obj[key]);
+		}
+		// for(const element of obj){
+		// 	console.log(element);
+		// // }
+		// localStorage.setItem("name","Hussnain");
+		// localStorage.setItem("name","Hussnain Shah");
+		// localStorage.setItem("age","20");
+		// console.log(localStorage.removeItem("name"));
+		localStorage.clear();
+		const myinfo = {
+			name: "Hussnain",
+			age: 3,
+
+		};
+		const stringobj = JSON.stringify(myinfo);
+		console.log(stringobj);
+		localStorage.setItem('myinfo',stringobj);
+		debugger;
+	</script>
+</body>
+</html>
