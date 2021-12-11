@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primarycolor: #D8644F;
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1.4;
+}
+
+.main-heading {
+    color: var(--black);
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.main-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 5px;
+    background-color: var(--primarycolor);
+}
+
+main {
+    padding: 20px;
+}
+
+/* Button Styling */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: var(--primarycolor);
+    color: var(--white);
+    border: 1px solid var(--primarycolor);
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--primarycolor);
+}
+
+/* Product Section Start */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 20%);
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.product-detail {
+    padding: 20px;
+}
+
+.product-detail .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-detail .title .product-heading {
+    color: var(--primarycolor);
+}
+
+.product-detail .title .price {
+    font-style: italic;
+}
+
+.product-detail .discription {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
