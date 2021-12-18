@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primarycolor: #D8644F;
+    --white: #fff;
+    --black: #2e2e2e;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    color: var(--black);
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.4;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    margin: 50px 20px;
+    max-width: 900px;
+
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.product-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.product-detail {
+    width: 100%;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+    padding: 20px;
+    flex: 1;
+}
+
+.product-detail h1 {
+    margin-bottom: 5px;
+}
+
+.product-detail .end-time {
+    color: var(--primarycolor);
+    margin-bottom: 5px;
+}
+
+/* Date Section */
+.date-container {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    gap: 5px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.date {
+    background-color: var(--primarycolor);
+    color: var(--white);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+.date h1 {
+    margin-bottom: 0px;
+    line-height: 1.2;
+    margin-top: -5px;
+    letter-spacing: 1px;
+}
+
+.date p {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.expireTime {
+    color: var(--primarycolor);
+}
+
+@media (max-width: 776px) {
+    .product {
+        flex-direction: column;
+        max-width: 400px;
+    }
+}
